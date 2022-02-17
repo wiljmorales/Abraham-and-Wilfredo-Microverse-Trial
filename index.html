@@ -7,9 +7,70 @@
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <h1>Hello World!! we are software developers.</h1>
-    <script  src="js/index.js"></script>
+    <nav id="navbar" >
+      <div id="header">
+        <h2>HTML Documentation</h2>
+      </div>
+      <ul>
+        <li><a href="">Getting started with HTML</a></li>
+        <li><a href="">What is HTML?</a></li>
+        <li><a href="">Anatomy of an HTML element</a></li>
+        <li><a href="#Block_versu_inline_elements">Block versus inline elements</a></li>
+        <li><a href="">Attributes</a></li>
+      </ul>
+    </nav>
+    <main id="main_doc">
+      <section class="main-section">
+        <div class="header">
+          <h2>Getting started with HTML</h2>
+        </div>
+        <p>In this article we cover the absolute basics of HTML. To get you started, this article defines elements, attributes, and all the other important terms you may have heard. It also explains where these fit into HTML. You will learn how HTML elements are structured, how a typical HTML page is structured, and other important basic language features. Along the way, there will be an opportunity to play with HTML too!</p>
+      </section>
+      <section class="main-section">
+        <div class="header">
+          <h2>What is HTML?</h2>
+        </div>
+        <p>HTML (Hypertext Markup Language) is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:</p>
+        <div class="example-box">
+          <code><p>My cat is very grumpy</p></code>
+        </div>
+        <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph (<code>< p ></code>) element:</p>
+        <div class="example-box">
+          <p><code>< p >My cat is very grumpy< /p ></code></p>
+        </div>
+      </section>
+      <section class="main-section">
+        <div class="header">
+          <h2>Anatomy of an HTML element</h2>
+        </div>
+        <p>The anatomy of our element is:</p>
+        <ul>
+          <li><strong>The opening tag:</strong> This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+          <li><strong>The content:</strong> This is the content of the element. In this example, it is the paragraph text.</li>
+          <li><strong>The closing tag:</strong> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+        </ul>
+      </section>
+      <section id="Block_versu_inline_elements"class="main-section">
+        <div class="header">
+          <h2>Block versus inline elements</h2>
+        </div>
+        <p>There are two important categories of elements to know in HTML: block-level elements and inline elements.</p>
+        <ul>
+          <li>Block-level elements form a visible block on a page. A block-level element appears on a new line following the content that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are usually structural elements on the page. For example, a block-level element might represent headings, paragraphs, lists, navigation menus, or footers. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</li>
+          <li>Inline elements are contained within block-level elements, and surround only small parts of the document’s content (not entire paragraphs or groupings of content). An inline element will not cause a new line to appear in the document. It is typically used with text, for example an <code>< strong ></strong></code> element creates a hyperlink, and elements such as <code>< em ></em></code> or <code>< strong ></strong></code> create emphasis.</li>
+        </ul>
+      </section>
+      <section class="main-section">
+        <div class="header">
+          <h2>Attributes</h2>
+        </div>
+        <p>An attribute should have:</p>
+        <ul>
+          <li>A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)</li>
+          <li>The attribute name, followed by an equal sign.</li>
+          <li>An attribute value, wrapped with opening and closing quote marks.</li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
