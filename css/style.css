@@ -12,6 +12,10 @@ body{
 
 #navbar{
     grid-area: nav;
+    position: fixed;
+    background-color: #ff8247;
+    height: 100vh;
+    word-wrap: break-word;
 }
 #navbar ul{
     list-style-type: none;
@@ -28,6 +32,7 @@ body{
 
 #main_doc{
     grid-area: main;
+    word-wrap: break-word;
 }
 
 h2{
